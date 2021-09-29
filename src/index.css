@@ -11,16 +11,23 @@ body {
   margin: 0px;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid violet;
+  border: 2px solid palevioletred;
   padding: 15px;
   border-radius: 5px;
 }
 
-.footer {
+Footer {
   display: flex;
-  background-color: teal;
+  background-color: powderblue;
   width: 100%;
   justify-content: center; /* Used to horizontally align the content of the footer */
   align-items: center; /* Used to vertically align the content of the footer */
   padding-left: 0px;
 }
+
+Table {
+
+  align-items: center;
+  justify-content: center;
+}
+
