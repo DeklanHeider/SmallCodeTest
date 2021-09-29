@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className='container'>
-      <Header headerContent='Vechicle Accident Website'/>
+      <Header headerContent='2018 Transport Accident Archive'/>
       <Table className='table'/>
       <Footer className='footer'
         footerContent={splitFooterContent} />
