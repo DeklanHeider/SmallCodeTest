@@ -1,12 +1,9 @@
 import './App.css';
-//import React, { useState, useEffect } from 'react'
+import Header from './components/header'
 import Footer from './components/footer'
-import Table  from './components/table';
+import Table  from './components/table'
 
 const App = () => {
-
-
-
 
   const footerContent = 'Powered by TfL Open Data\nContains OS data © Crown copyright and database rights [2016] and Geomni UK Map data © and database rights [2019]';
 
@@ -18,6 +15,7 @@ const App = () => {
 
   return (
     <div className='container'>
+      <Header headerContent='Vechicle Accident Website'/>
       <Table className='table'/>
       <Footer className='footer'
         footerContent={splitFooterContent} />
