@@ -17,7 +17,7 @@ class Table extends React.Component {
         const url = `https://api.tfl.gov.uk/AccidentStats/2018` // The url for the API data of 2018 (the data I want to display).
         const response = await fetch(url);                      // GET the data we are after using the url provided above.
         const data = await response.json();                     // convert the response into a JSON file.
-        const accidents = data.slice(0, 30);                       // To take the first 100 entries of the data retrieved from the API
+        const accidents = data.slice(0, 30);                       // To take the first 30 entries of the data retrieved from the API (any number here is fine, scrolling forever without pagination is not).
         this.setState({ loading: false, data, accidents});
         console.log(accidents);                                    // For debugging to ensure result is being filled with the 30 results.  
 
